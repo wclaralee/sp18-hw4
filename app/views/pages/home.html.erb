@@ -1,0 +1,17 @@
+<% @cats.each do |t| %>
+        <strong>Hi, I am a cat. Call me <%= t.name %></strong><br>
+        <br>        
+  <% end %>
+
+<% @todos.each do |t| %>
+        <strong>I'm busy. Today I have to do this: <%= t.tasks %></strong><br>
+        <strong>Am I done yet? <%=t.finished %> </strong> <br>
+        <br>        
+  <% end %>
+
+<% @users.each do |t| %>
+    <strong>Hi, I am <%= t.username %></strong><br>
+    <strong> I am <%= t.age %> years old </strong> <br>
+    <strong> You can email me at <%= t.email %> </strong> <br>
+    <br>        
+<% end %>
